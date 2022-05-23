@@ -38,7 +38,7 @@ const Table = ({ data }) => {
                 <a
                   href={`https://bscscan.com/tx/${d.hash}`}
                   target="_blank"
-                  className="text-blue-400"
+                  className="text-blue-400" rel="noreferrer"
                 >
                   {d.hash.substring(0, 12)}...
                 </a>
@@ -47,7 +47,7 @@ const Table = ({ data }) => {
                 <a
                   href={`https://bscscan.com/address/${d.from}`}
                   target="_blank"
-                  className="text-blue-400"
+                  className="text-blue-400" rel="noreferrer"
                 >
                   {d.from.substring(0, 12)}...{" "}
                 </a>{" "}
@@ -56,7 +56,7 @@ const Table = ({ data }) => {
                 <a
                   href={`https://bscscan.com/address/${d.to}`}
                   target="_blank"
-                  className="text-blue-400"
+                  className="text-blue-400" rel="noreferrer"
                 >
                   {d.to.substring(0, 12)}...{" "}
                 </a>

@@ -46,7 +46,7 @@ return (
                     />
                 </button>
                 <div>
-                    <span className={`font-bold text-${parseFloat(v.price_change_percentage_24h)>0?"green":"red"}-500`}>{parseFloat(v.price_change_24h).toPrecision(5)} ({parseFloat(v.price_change_percentage_24h).toPrecision(3)}%)</span><br />
+                    <span style={{color: parseFloat(v.price_change_percentage_24h)>0?"green":"red"}} className={`font-bold text-${parseFloat(v.price_change_percentage_24h)>0?"green":"red"}-500`}>{parseFloat(v.price_change_24h).toPrecision(5)} ({parseFloat(v.price_change_percentage_24h).toPrecision(3)}%)</span><br />
                     <span className="font-medium text-xs text-gray-500 flex justify-end">Rank: {v.market_cap_rank} </span>
                 </div>
                 </div>

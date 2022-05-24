@@ -102,6 +102,9 @@ var data = [
 const svg = d3
   .select('#mysvg');
 
+  data = data.filter((d)=>(d.value>0))
+  
+
 // identify the dimensions of the viewBox to establish the svg canvas
 const viewBox = svg.attr('viewBox');
 const regexViewBox = /\d+ \d+ (\d+) (\d+)/;
@@ -230,8 +233,8 @@ groupsArcs
 groupsArcs
   .append('text')
   .attr('x', 0)
-  .attr('y', 0)
-  .attr('font-size', 8)
+  .attr('y', -15)
+  .attr('font-size', 14)
   .attr('text-anchor', (d) => {
     const [x] = arc.centroid(d);
     return x > 0 ? 'start' : 'end';
@@ -242,7 +245,7 @@ groupsArcs
     return `translate(${x + offset} ${y})`;
   })
   .html(({ data: d }) => `
-    <tspan x="0">${d.name}:</tspan><tspan x="0" dy="10" font-size="6">${d.percentage}% / ${d.value}</tspan>
+    <tspan x="0">${d.name}:</tspan><tspan x="0" leading-10 dy="10" font-size="10">${d.percentage}% / ${d.value}</tspan>
   `)
   .style('opacity', 0)
   .style('visibility', 'hidden');

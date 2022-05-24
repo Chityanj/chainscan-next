@@ -29,8 +29,8 @@ const Table = ({ data }) => {
           </tr>{" "}
         </thead>{" "}
         <tbody>
-          {data?.result?.map((d) => (
-            <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+          {data?.result?.map((d, i) => (
+            <tr key={i.toString()} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
               <th
                 scope="row"
                 className="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap"

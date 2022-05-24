@@ -33,9 +33,10 @@ function Card() {
 
     
     <div className=" py-6 flex flex-col mx-auto sm:py-12">
+       <h1 className="mx-auto text-3xl bold">BlockScan</h1>
         
         <div className="">
-        <h1 >BlockScan</h1>
+        
             <div className="h-auto py-20 px-10 w-2/3 bg-[#12161c] bg-[url('https://bscscan.com/images/svg/components/abstract-shapes-20.svg?v=2')] flex flex-col space-y-5 mx-auto rounded-3xl shadow-xl ">
 
             <div className="w-4/6 h-10 pl-3 pr-2 bg-white border rounded-full flex justify-between items-center relative">

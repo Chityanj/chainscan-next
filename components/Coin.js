@@ -31,7 +31,7 @@ function Coin() {
         
 return (
     
-    <div className="h-56 w-2/3 grid grid-cols-3 gap-4 flex justify-between items-center relative mx-auto">
+    <div className="h-56 w-2/3 grid grid-cols-3 sm:grid-cols-3 gap-4 flex justify-between items-center relative mx-auto">
         {data.map((v, i)=>(
             <div key={i.toString()} className="bg-white rounded-3xl border shadow-xl p-8 w-auto">
                 <div className="flex justify-between items-center mb-4">

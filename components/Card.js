@@ -39,7 +39,7 @@ function Card() {
         
             <div className="h-auto py-20 px-10 w-2/3 bg-[#12161c] bg-[url('https://bscscan.com/images/svg/components/abstract-shapes-20.svg?v=2')] flex flex-col space-y-5 mx-auto rounded-3xl shadow-xl ">
 
-            <div className="w-4/6 h-10 pl-3 pr-2 bg-white border rounded-full flex justify-between items-center relative">
+            <div className="w-4/6 sm:w-auto h-10 pl-3 pr-2 bg-white border rounded-full flex justify-between items-center relative">
             <input type="search" name="search" id="search" 
                    placeholder="Enter your address staring with 0x"
                    className="appearance-none w-full outline-none focus:outline-none active:outline-none"
